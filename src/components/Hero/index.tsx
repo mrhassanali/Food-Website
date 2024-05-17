@@ -66,7 +66,7 @@ export default function Hero(): ReactElement {
 function HeroCard() {
   return (
     <div className="medium:w-38 w-52 rounded-lg bg-white p-3 shadow-2xl sm:w-40 md:w-44">
-      <div className="bg-slate-100 p-2">
+      <div className="bg-slate-100 p-2 rounded-lg">
         <img
           src="/images/popular-food/barbe-que.jpg"
           alt="Salad Special"

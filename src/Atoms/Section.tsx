@@ -8,7 +8,7 @@ type SectionProps = {
 function Section({ children, className }: SectionProps): ReactElement {
   return (
     <div
-      className={`p-4" border border-l-slate-950 ${className ? className : ""}`}
+      className={`p-4" ${className ? className : ""}`}
     >
       {children}
     </div>
