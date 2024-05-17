@@ -4,9 +4,6 @@
 
 ![Food Website](https://raw.githubusercontent.com/mrhassanali/Food-Website/main/Design/design.png)
 
-##  Demo
-
-https://morent-car-booking-website.vercel.app/
 ## Run Locally
 
 Clone the project
