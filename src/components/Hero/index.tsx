@@ -30,7 +30,7 @@ export default function Hero(): ReactElement {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Repellendus, sed.
               </p>
-              <button className="xs:w-full mt-12 rounded-full bg-beers px-5 py-3 text-lg text-white small:mt-4 small:w-fit sm:mt-4 sm:w-fit md:mt-6 md:w-1/3">
+              <button className="xs:w-full mt-12 rounded-full bg-beers px-5 py-3 text-lg text-white small:mt-4 small:w-fit sm:mt-4 sm:w-fit md:mt-6 md:w-30">
                 Order Now
               </button>
             </div>
@@ -44,9 +44,13 @@ export default function Hero(): ReactElement {
               />
             </div>
 
-            <div className="absolute bottom-0 right-5 hidden md:block lg:block xl:block">
+            <div className="absolute bottom-10 right-5 hidden md:block lg:block xl:block sm:block fullhd:right-5 fullhd:bottom-10 xxlarge:right-5 xxlarge:bottom-8 xlarge:right-2 xlarge:bottom-2 large:right-0 large:bottom-0 medium:bottom-0 medium:right-0 medium:block">
               <HeroCard />
             </div>
+
+            {/* <div className="absolute bottom-0 left-50 hidden md:block lg:block xl:block">
+              <HeroCard />
+            </div> */}
 
             <img src={HeroImage} alt="vegetables-salad-leaf-vegetable z-100" />
             <div className="lg:bottom-18 medium:-bottom-18 absolute bottom-28 left-0 -z-20 small:-bottom-0 sm:bottom-20 md:bottom-4 ">
@@ -65,12 +69,12 @@ export default function Hero(): ReactElement {
 
 function HeroCard() {
   return (
-    <div className="medium:w-38 w-52 rounded-lg bg-white p-3 shadow-2xl sm:w-40 md:w-44">
-      <div className="bg-slate-100 p-2 rounded-lg">
+    <div className=" p-3 rounded-lg medium:w-38 w-52 bg-white shadow-2xl sm:w-40 md:w-44">
+      <div className="rounded-lg bg-slate-100 p-3">
         <img
           src="/images/popular-food/barbe-que.jpg"
           alt="Salad Special"
-          className="mx-auto h-32 w-32 object-cover mix-blend-multiply"
+          className="mx-auto h-28 w-28 object-cover mix-blend-multiply"
         />
       </div>
       <div className="flex-rows mt-2 flex items-center  justify-between">
