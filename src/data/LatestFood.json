@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Burger with french fries and red cabbage salad",
+    "price": 10.99,
+    "slug": "#",
+    "date": "2021-09-01",
+    "image":"/images/latest-food/KFC-Expands-Global-Reach-with-New-Openings-in-India-and-Romania.jpg"
+  },
+  {
+    "title": "Mexican Tacos with Beef in Tomato Sauce and Salsa",
+    "price": 19.99,
+    "slug": "#",
+    "date": "2024-09-01",
+    "image":"/images/latest-food/mexican-tacos-with-beef-tomato.jpg"
+  },
+  {
+    "title": "Falafel and fresh vegetables in pita bread. Falafel and fresh vegetab",
+    "price": 19.99,
+    "slug": "#",
+    "date": "2024-09-01",
+    "image":"/images/latest-food/1699016138059.jpeg"
+  }
+]

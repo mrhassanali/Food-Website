@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Tomato Salad",
+    "type": "Vegetable",
+    "price": "90",
+    "img": "https://img.freepik.com/premium-photo/pasta-fusilli-with-bolognese-tomato-beef-sauce-kitchen-table_488220-4072.jpg?w=740"
+  },
+
+  {
+    "name": "Platter Grilled Lamb",
+    "type": "Vegetable",
+    "price": "100",
+    "img": "/images/popular-food/Platter-grilled-lamb.png"
+  },
+  {
+    "name": "Italian cuisine pasta",
+    "type": "Pasta",
+    "price": "60",
+    "img": "/images/popular-food/Italian-cuisine-pasta.png"
+  },
+  {
+    "name": "vegetables salad",
+    "type": "Vegetable",
+    "price": "20",
+    "img": "/images/popular-food/Salmon-with-vegetables-salad.png"
+  },
+  {
+    "name": "Barbecue chicken",
+    "type": "Chicken",
+    "price": "20",
+    "img": "/images/popular-food/barbe-que.jpg"
+  },
+  {
+    "name": "Thei fried rice noodles",
+    "type": "Chicken",
+    "price": "15",
+    "img": "/images/popular-food/thai-food-stir-fried-rice-noodles.jpg"
+  },
+  {
+    "name": "Pasta fusilli ",
+    "type": "Chicken",
+    "price": "60",
+    "img": "/images/popular-food/pasta-fusilli-with-bolognese-tomato-beef.jpg"
+  },
+  {
+    "name": "Spaghetti",
+    "type": "Chicken",
+    "price": "60",
+    "img": "/images/popular-food/spaghetti.jpg"
+  }
+]
