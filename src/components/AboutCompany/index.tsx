@@ -6,7 +6,7 @@ import LunchImg from "../../assets/images/lunch.png";
 
 export default function AboutCompany(): ReactElement {
   return (
-    <Section className="pb-20 pt-20">
+    <Section className="pb-20 pt-20" id={"about-us"}>
       <Section.Heading>About The Company</Section.Heading>
       <div className="m-4 mx-auto mt-10 grid w-5/6 grid-cols-3 mobile:mt-4 small:grid-cols-1 medium:mt-4 medium:grid-cols-2 sm:mt-7 sm:w-full md:mt-10 md:w-5/6 md:grid-cols-3">
         <div className="inline-block p-3 text-center">

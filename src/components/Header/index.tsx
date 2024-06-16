@@ -1,14 +1,22 @@
 import React from "react";
-import {NavLink } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Bars4Icon, ShoppingCartIcon } from "@heroicons/react/20/solid";
 import Logo from "../../assets/images/logo.png";
+import clsx from "clsx";
+
+const navigation = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/#about-us" },
+  { name: "Products", href: "/#products" },
+  { name: "Contact", href: "/#contact" },
+];
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
-  const handleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const handleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  let location = useLocation();
+  let checkIsActive = `${location.pathname}${location.hash}`;
 
   return (
     <nav className="bg-slate-100 px-8 py-2">
@@ -20,49 +28,33 @@ export default function Header() {
 
         <div className="hidden md:block lg:block">
           <ul className="inline-flex gap-x-4 ">
-            <li>
-              <NavLink
-                to={"/"}
-                className={({ isActive }) =>
-                  isActive ? "text-black" : "text-slate-500"
-                }
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to={"/about"}
-                className={({ isActive }) =>
-                  isActive ? "text-black" : "text-slate-500"
-                }
-              >
-                About Us
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to={"/products"}
-                className={({ isActive }) =>
-                  isActive ? "text-black" : "text-slate-500"
-                }
-              >
-                Products
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to={"/contact-us"}
-                className={({ isActive }) =>
-                  isActive ? "text-black" : "text-slate-500"
-                }
-              >
-                Contact Us
-              </NavLink>
-            </li>
+            {navigation.map((item, index) => {
+              return (
+                <li key={index}>
+                  {item.href.split("").includes("#") ? (
+                    <a
+                      href={item.href}
+                      className={clsx({
+                        "text-black": checkIsActive === item.href,
+                        "text-slate-500": !(checkIsActive === item.href),
+                      })}
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={clsx({
+                        "text-black": checkIsActive === item.href,
+                        "text-slate-500": !(checkIsActive === item.href),
+                      })}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="inline-flex items-center gap-x-3">

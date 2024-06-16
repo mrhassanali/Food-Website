@@ -3,13 +3,12 @@ import React, { ReactElement, ReactNode } from "react";
 type SectionProps = {
   children: ReactNode;
   className?: string;
+  id?: string;
 };
 
-function Section({ children, className }: SectionProps): ReactElement {
+function Section({ children, className, id }: SectionProps): ReactElement {
   return (
-    <div
-      className={`p-4" ${className ? className : ""}`}
-    >
+    <div className={`p-4" ${className ? className : ""}`} id={id ? id : ""}>
       {children}
     </div>
   );

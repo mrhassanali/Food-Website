@@ -4,7 +4,7 @@ import popularFood from "../../data/PopularFood.json";
 
 export default function PopularFood(): ReactElement {
   return (
-    <Section className={"bg-slate-100 pb-20 pt-10"}>
+    <Section className={"bg-slate-100 pb-20 pt-10"} id="products">
       <Section.Heading>Our Popular Foods Menu</Section.Heading>
       <div className="mobile:mt-18 mx-auto mt-32 grid w-10/12 grid-cols-4 gap-x-7 p-2 mobile:w-full mobile:grid-cols-2 mobile:gap-y-32 medium:grid-cols-3 sm:mt-28 sm:w-full sm:gap-y-32 large:w-11/12 md:mt-32 md:grid-cols-4">
         {popularFood.map((item, index) => {

@@ -14,7 +14,6 @@ export default function Home() {
       <AboutCompany />
       <PopularFood />
       <LatestFood />
-   
     <Footer /> 
     </div>
   );

@@ -8,7 +8,10 @@ import { ReactComponent as FacebookSVG } from "../../assets/svg/facebook.svg";
 
 export default function Footer() {
   return (
-    <div className="flex-rows mobile:flex-cols flex items-center justify-between bg-stone-950 px-10 py-4 text-white mobile:flex-col mobile:px-3 small:flex-col sm:flex-row sm:px-4 md:flex-row md:px-10 lg:flex-row">
+    <div
+      className="flex-rows mobile:flex-cols flex items-center justify-between bg-stone-950 px-10 py-4 text-white mobile:flex-col mobile:px-3 small:flex-col sm:flex-row sm:px-4 md:flex-row md:px-10 lg:flex-row"
+      id="contact"
+    >
       <div className="inline-flex items-center justify-between gap-x-1">
         <img src={Logo} alt="food" className="h-10 w-10" />
         <h1 className="font-inter text-2xl font-bold capitalize">Food</h1>
